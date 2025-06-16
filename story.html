@@ -41,7 +41,7 @@
     background: rgba(255,255,255,0.7);
     padding: 20px;
     border-radius: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .flex-row {
@@ -136,6 +136,11 @@
     font-size: 1rem;
     line-height: 1.6;
   }
+    
+  .story-bar.s15 { flex-basis: 15%; }
+  .story-bar.s5  { flex-basis: 5%; }
+  .story-bar.s50 { flex-basis: 50%; }
+  .story-bar.s30 { flex-basis: 30%; }
 </style>
 
 </head>
@@ -240,21 +245,22 @@
     <div class="toggle-title" onclick="toggle('content3')"> 궁금한 것을 들려줄 스토리라인 ✍️ </div>
 <div id="content3" class="toggle-content">
   <div class="storyline">
-    <div class="story-row">
-      <div class="story-bar">상황</div>
-      <div class="story-text">가능한 한 간결하게, 과하지 않게 표현!</div>
-    </div>
-    <div class="story-row">
-      <div class="story-bar">포지션</div>
-      <div class="story-text">직위, 업무 등 내가 담당한 역할 언급!</div>
-    </div>
-    <div class="story-row">
-      <div class="story-bar">행동</div>
-      <div class="story-text">내가 어떻게 행동하고, 움직였는지!</div>
-    </div>
-    <div class="story-row">
-      <div class="story-bar">성과</div>
-      <div class="story-text">타인의 평가, 수치화된 결과물을 중심으로!</div>
+   <div class="story-row">
+  <div class="story-bar s15">상황</div>
+  <div class="story-text">가능한 한 간결하게, 과하지 않게 표현!</div>
+</div>
+<div class="story-row">
+  <div class="story-bar s5">포지션</div>
+  <div class="story-text">직위, 업무 등 내가 담당한 역할 언급!</div>
+</div>
+<div class="story-row">
+  <div class="story-bar s50">행동</div>
+  <div class="story-text">내가 어떻게 행동하고, 움직였는지!</div>
+</div>
+<div class="story-row">
+  <div class="story-bar s30">성과</div>
+  <div class="story-text">타인의 평가, 수치화된 결과물을 중심으로!</div>
+</div>
     </div>
   </div>
 </div>
