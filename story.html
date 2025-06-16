@@ -76,6 +76,10 @@ body {
   gap: 10px;
   align-items: center;
   margin-bottom: 12px;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
 }
 .quiz input[type="button"] {
   padding: 5px 15px;
@@ -282,7 +286,6 @@ body {
       </div>
       </div>
     </div>
-
     <div class="toggle-title" onclick="toggle('content5')"> 고민하지 않을 추천 문항 👆 </div>
     <div id="content5" class="toggle-content">
       <div class="recommend-row">
@@ -300,5 +303,15 @@ body {
       el.style.display = el.style.display === 'block' ? 'none' : 'block';
     }
   </script>
+  
+  <script>
+  // OX 버튼 누르면 질문 전체 박스 배경색 개나리색으로 바뀜!
+  document.querySelectorAll('.quiz input[type="button"]').forEach(button => {
+    button.addEventListener('click', function () {
+      const quizBox = this.closest('.quiz');
+      quizBox.style.background = '#fff9b1'; // 개나리색 💛
+    });
+  });
+</script>
 </body>
 </html>
