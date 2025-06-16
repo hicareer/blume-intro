@@ -97,6 +97,40 @@
       border-radius: 10px;
       min-height: 100px;
     }
+    .storyline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.story-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.story-bar {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #7788aa;
+  flex-shrink: 0;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.story-text {
+  flex: 1;
+  padding: 14px 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
   </style>
 </head>
 <body>
@@ -198,14 +232,26 @@
     </div>
 
     <div class="toggle-title" onclick="toggle('content3')"> 궁금한 것을 들려줄 스토리라인 ✍️ </div>
-    <div id="content3" class="toggle-content">
-      <div class="vertical-bars">
-        <div class="bar" style="height:15%">상황: 가능한 한 간결하게, 과하지 않게 표현!</div>
-        <div class="bar" style="height:5%">포지션: 직위, 업무 등 내가 담당한 역할 언급!</div>
-        <div class="bar" style="height:50%">행동: 내가 어떻게 행동하고, 움직였는지!</div>
-        <div class="bar" style="height:30%">성과: 타인의 평가, 수치화된 결과물을 중심으로!</div>
-      </div>
+<div id="content3" class="toggle-content">
+  <div class="storyline">
+    <div class="story-row">
+      <div class="story-bar">상황</div>
+      <div class="story-text">가능한 한 간결하게, 과하지 않게 표현!</div>
     </div>
+    <div class="story-row">
+      <div class="story-bar">포지션</div>
+      <div class="story-text">직위, 업무 등 내가 담당한 역할 언급!</div>
+    </div>
+    <div class="story-row">
+      <div class="story-bar">행동</div>
+      <div class="story-text">내가 어떻게 행동하고, 움직였는지!</div>
+    </div>
+    <div class="story-row">
+      <div class="story-bar">성과</div>
+      <div class="story-text">타인의 평가, 수치화된 결과물을 중심으로!</div>
+    </div>
+  </div>
+</div>
 
     <div class="toggle-title" onclick="toggle('content4')"> 술술 읽히게 할 팁 🍯 </div>
     <div id="content4" class="toggle-content">
