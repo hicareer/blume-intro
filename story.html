@@ -82,24 +82,23 @@
   }
 
   .recommend-row {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 24px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
+  display: flex;
+  flex-direction: column; /* 👉 가로 → 세로 */
+  gap: 24px;
+  align-items: center;
+  margin-top: 20px;
+}
 
-  .recommend-box {
-    flex: 1 1 360px;
-    background: rgba(255,255,255,0.75);
-    border: 2px solid #bbb;
-    border-radius: 16px;
-    padding: 30px 24px;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
+.recommend-box {
+  width: 80%;
+  background: rgba(255,255,255,0.8);
+  border: none; /* 👉 테두리 제거 */
+  border-radius: 20px;
+  padding: 32px;
+  font-size: 1.3rem; /* 👉 글씨 크게 */
+  line-height: 2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
 
   .storyline {
     display: flex;
