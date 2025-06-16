@@ -7,50 +7,52 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     @font-face {
-      font-family: 'Paperlogy';
-      src: url('Paperlogy-5Medium.ttf') format('truetype');
-    }
+  font-family: 'Paperlogy';
+  src: url('Paperlogy-5Medium.ttf') format('truetype');
+}
 
-    body {
-      margin: 0;
-      font-family: 'Paperlogy', sans-serif;
-      background-image: url('나에게서 피어날 자기소개서 배경.png');
-      background-size: cover;
-      background-position: center;
-    }
+body {
+  margin: 0;
+  font-family: 'Paperlogy', sans-serif;
+  background-image: url('나에게서 피어날 자기소개서 배경.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-    .center-box {
-      width: 90%;
-      max-width: 800px;
-      margin: 100px auto;
-      background-color: rgba(255, 255, 255, 0.7);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
+.center-box {
+  width: 90%;
+  max-width: 960px;
+  margin: 120px auto;
+  background-color: rgba(255, 255, 255, 0.75); /* 약간 더 투명하게 */
+  padding: 60px 40px;
+  border-radius: 24px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
 
-    h1 {
-      text-align: center;
-      font-size: 2.2em;
-    }
+h1 {
+  text-align: center;
+  font-size: 2.6em;
+  margin-bottom: 40px;
+}
 
-    .menu {
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-    }
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+}
 
-    .menu a {
-      text-decoration: none;
-      color: #333;
-      font-size: 1.4em;
-      transition: transform 0.3s ease;
-    }
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.6em;
+  transition: transform 0.3s ease, color 0.2s ease;
+}
 
-    .menu a:hover {
-      transform: rotate(3deg) scale(1.1);
+.menu a:hover {
+  transform: scale(1.1);
+  color: #555;
     }
   </style>
 </head>
